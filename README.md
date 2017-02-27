@@ -14,6 +14,8 @@ cd CoreNLP
 docker build . -t corenlp
 ```
 
+This builds a docker image named corenlp. It contains a CoreNLP server listening to port 9000.
+
 
 ## CoreNLP README
 
