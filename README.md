@@ -11,9 +11,6 @@ This is a fork of Standford CoreNLP with some patch to make it work for Platypus
 ```
 git clone https://github.com/askplatypus/CoreNLP.git
 cd CoreNLP
-ant
-cd classes && jar -cf ../stanford-corenlp.jar edu && cd ..
-wget http://nlp.stanford.edu/software/stanford-english-corenlp-2016-10-31-models.jar && wget http://nlp.stanford.edu/software/stanford-french-corenlp-2016-01-14-models.jar && wget http://nlp.stanford.edu/software/stanford-german-corenlp-2016-10-31-models.jar
 docker build . -t corenlp
 ```
 
