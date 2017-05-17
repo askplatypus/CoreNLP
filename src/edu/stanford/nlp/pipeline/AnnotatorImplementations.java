@@ -60,10 +60,6 @@ public class AnnotatorImplementations  {
    */
   public Annotator posTagger(Properties properties) {
     String annotatorName = "pos";
-    if(properties.getProperty("tokenize.language") != null && properties.getProperty("tokenize.language").equals("fr")) {
-      System.out.println("fr POS tagger");
-      return new FrenchMappingPOSTaggerAnnotator(new POSTaggerAnnotator(annotatorName, properties));
-    }
     return new POSTaggerAnnotator(annotatorName, properties);
   }
 

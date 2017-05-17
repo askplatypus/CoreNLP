@@ -6,7 +6,7 @@ RUN mkdir /usr/src/app && \
     wget http://nlp.stanford.edu/software/stanford-chinese-corenlp-2016-10-31-models.jar && \
     wget http://nlp.stanford.edu/software/stanford-english-corenlp-2016-10-31-models.jar && \
     wget http://nlp.stanford.edu/software/stanford-english-kbp-corenlp-2016-10-31-models.jar && \
-    wget http://nlp.stanford.edu/software/stanford-french-corenlp-2016-01-14-models.jar && \
+    wget http://nlp.stanford.edu/software/stanford-french-corenlp-models-current.jar && \
     wget http://nlp.stanford.edu/software/stanford-german-corenlp-2016-10-31-models.jar && \
     wget http://nlp.stanford.edu/software/stanford-spanish-corenlp-2016-10-31-models.jar && \
     apt-get update && apt-get install -y --no-install-recommends ant
