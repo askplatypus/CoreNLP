@@ -9,10 +9,13 @@ RUN cd /usr/src/app/ && \
     cd classes && \
     jar -cf ../stanford-corenlp.jar edu && \
     cd .. && \
+    wget http://nlp.stanford.edu/software/stanford-arabic-corenlp-2016-10-31-models.jar && \
+    wget http://nlp.stanford.edu/software/stanford-chinese-corenlp-2016-10-31-models.jar && \
     wget http://nlp.stanford.edu/software/stanford-english-corenlp-2016-10-31-models.jar && \
-    wget http://nlp.stanford.edu/software/stanford-french-corenlp-2016-01-14-models.jar && \ 
+    wget http://nlp.stanford.edu/software/stanford-english-kbp-corenlp-2016-10-31-models.jar && \
+    wget http://nlp.stanford.edu/software/stanford-french-corenlp-2016-01-14-models.jar && \
     wget http://nlp.stanford.edu/software/stanford-german-corenlp-2016-10-31-models.jar && \
-    wget http://nlp.stanford.edu/software/stanford-english-kbp-corenlp-2016-10-31-models.jar
+    wget http://nlp.stanford.edu/software/stanford-spanish-corenlp-2016-10-31-models.jar
 
 
 ENV PORT 9000
