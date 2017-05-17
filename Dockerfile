@@ -11,7 +11,8 @@ RUN cd /usr/src/app/ && \
     cd .. && \
     wget http://nlp.stanford.edu/software/stanford-english-corenlp-2016-10-31-models.jar && \
     wget http://nlp.stanford.edu/software/stanford-french-corenlp-2016-01-14-models.jar && \ 
-    wget http://nlp.stanford.edu/software/stanford-german-corenlp-2016-10-31-models.jar
+    wget http://nlp.stanford.edu/software/stanford-german-corenlp-2016-10-31-models.jar && \
+    wget http://nlp.stanford.edu/software/stanford-english-kbp-corenlp-2016-10-31-models.jar
 
 
 ENV PORT 9000
