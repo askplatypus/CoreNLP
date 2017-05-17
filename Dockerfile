@@ -22,4 +22,4 @@ RUN cd /usr/src/app && \
 ENV PORT 9000
 EXPOSE $PORT
 
-CMD java -cp "/usr/src/app/*" -Xmx10g edu.stanford.nlp.pipeline.StanfordCoreNLPServer
+CMD java -cp "/usr/src/app/*;/usr/src/app/lib/*;/usr/src/app/liblocal/*" -Xmx10g edu.stanford.nlp.pipeline.StanfordCoreNLPServer
