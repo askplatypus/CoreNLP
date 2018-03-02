@@ -1,8 +1,7 @@
 # This dockerfile is inspired by https://github.com/motiz88/corenlp-docker/blob/master/Dockerfile
 
-FROM openjdk:8-jre-alpine
+FROM openjdk:9-jre-slim
 
-RUN apk add --update --no-cache unzip wget
 RUN wget http://nlp.stanford.edu/software/stanford-corenlp-full-2018-02-27.zip && \
     unzip stanford-corenlp-full-2018-02-27.zip && \
     rm stanford-corenlp-full-2018-02-27.zip && \
@@ -18,4 +17,4 @@ RUN wget http://nlp.stanford.edu/software/stanford-corenlp-full-2018-02-27.zip &
 ENV PORT 9000
 EXPOSE $PORT
 
-CMD java -cp "/stanford-corenlp-full-2018-02-27/*" -Xmx8g edu.stanford.nlp.pipeline.StanfordCoreNLPServer
+CMD java -cp "/stanford-corenlp-full-2018-02-27/*" -Xmx8g edu.stanford.nlp.pipeline.StanfordCoreNLPServer --add-modules java.se.ee
