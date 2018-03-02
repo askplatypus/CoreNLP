@@ -2,7 +2,7 @@
 
 FROM openjdk:9-jre-slim
 
-RUN apt-get -qq -y install wget unzip
+RUN apt-get update && apt-get -qq -y install wget unzip
 RUN wget http://nlp.stanford.edu/software/stanford-corenlp-full-2018-02-27.zip && \
     unzip stanford-corenlp-full-2018-02-27.zip && \
     rm stanford-corenlp-full-2018-02-27.zip && \
